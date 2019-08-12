@@ -1,0 +1,34 @@
+@font-face {
+    font-family: pix;
+    src: url(images/slkscr.ttf);
+}
+body {
+	padding: 0;
+	margin: 0;
+	background-color:#303030;
+}
+
+.btn-box {
+	position:absolute; 
+	width:100%;
+	text-align:center;
+}
+
+p {
+	font: 25px pix, sans-serif;
+	width: 160px;
+	color: white;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+p.selected { 
+	background: yellow;
+	color: black;
+}
+p.normal { 
+	background:none; 
+	color: white;
+}
