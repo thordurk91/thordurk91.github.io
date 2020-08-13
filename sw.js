@@ -2,8 +2,8 @@ importScripts('/_nuxt/workbox.4c4f5ca6.js')
 
 workbox.precaching.precacheAndRoute([
   {
-    "url": "/_nuxt/46199d31a6b8e5177478.js",
-    "revision": "ed7e51da9d41bcbfc44761e376297a7a"
+    "url": "/_nuxt/4cef28eaeb1895264d83.js",
+    "revision": "2d437c3e094e807044ac3325fbece9d9"
   },
   {
     "url": "/_nuxt/5f78f7ba8f4b645114d3.js",
@@ -34,7 +34,7 @@ workbox.precaching.precacheAndRoute([
     "revision": "eedec4d6ed1cce1cfc3329b20ddd25c5"
   }
 ], {
-  "cacheId": "hundaio",
+  "cacheId": "thorduk91.github.io",
   "directoryIndex": "/",
   "cleanUrls": false
 })
