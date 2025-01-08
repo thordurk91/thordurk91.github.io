@@ -1,0 +1,46 @@
+@font-face {
+    font-family: pix;
+    src: url(images/slkscr.ttf);
+}
+
+.help-text{
+	font-family: sans-serif;
+	font-size: 2rem;
+	color: white;
+	margin: 0 auto;
+	max-width: 100vw;
+	width: auto;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color:#303030;
+}
+
+.btn-box {
+	position:absolute; 
+	width:100%;
+	text-align:center;
+}
+
+p {
+	font: 25px pix, sans-serif;
+	width: 160px;
+	color: white;
+	margin-left: auto;
+  margin-right: auto;
+	margin-top:0;
+	margin-bottom:10px;
+}
+
+p.selected { 
+	background: yellow;
+	color: black;
+}
+p.normal { 
+	background:none; 
+	color: white;
+}
