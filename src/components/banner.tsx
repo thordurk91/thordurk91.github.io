@@ -3,7 +3,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 import { FontLoader, Font } from 'three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 
 interface ParticleData {
   text: string;
@@ -44,11 +43,11 @@ class Environment {
   private particle: THREE.Texture;
   private container: HTMLElement;
   private scene: THREE.Scene;
-  private camera: THREE.PerspectiveCamera;
-  private renderer: THREE.WebGLRenderer;
-  private createParticles: CreateParticles;
+  private camera!: THREE.PerspectiveCamera;
+  private renderer!: THREE.WebGLRenderer;
+  private createParticles!: CreateParticles;
 
-  constructor(font: THREE.Font, particle: THREE.Texture) {
+  constructor(font: Font, particle: THREE.Texture) {
     this.font = font;
     this.particle = particle;
     this.container = document.querySelector('#magic') as HTMLElement;
@@ -159,9 +158,9 @@ class CreateParticles {
   private colorChange: THREE.Color;
   private buttom: boolean;
   private data: ParticleData;
-  private particles: THREE.Points;
-  private geometryCopy: THREE.BufferGeometry;
-  private planeArea: THREE.Mesh;
+  private particles!: THREE.Points;
+  private geometryCopy!: THREE.BufferGeometry;
+  private planeArea!: THREE.Mesh;
 
   constructor(
     scene: THREE.Scene,
@@ -268,7 +267,6 @@ class CreateParticles {
         const f = -this.data.area / d;
 
         if (this.buttom) {
-          const t = Math.atan2(dy, dx);
           this.colorChange.setHSL(0.5 + zigzagTime, 0.5, 0.5);
           colors.setXYZ(i, this.colorChange.r, this.colorChange.g, this.colorChange.b);
           colors.needsUpdate = true;
